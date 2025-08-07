@@ -1,0 +1,7 @@
+// preload.js
+const { contextBridge, ipcRenderer } = require('electron');
+
+contextBridge.exposeInMainWorld('electronAPI', {
+  invoke: (channel, args) => ipcRenderer.invoke(channel, args),
+  // إضافة قنوات IPC أخرى عند الحاجة
+});
