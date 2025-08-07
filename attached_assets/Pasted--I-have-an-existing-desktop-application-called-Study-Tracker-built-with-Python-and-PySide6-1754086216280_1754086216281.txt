@@ -1,0 +1,81 @@
+
+
+> I have an existing desktop application called **Study Tracker**, built with Python and PySide6. It manages daily tasks, overdue tasks, progress logging, reports, charts, and notifications using a local SQLite database.
+>
+> I want you to **rebuild and upgrade it as a modern web-based application** (with the option to later package it as a local desktop app using Electron or a similar tool).
+>
+> ### **Existing Key Features (must be preserved):**
+>
+> * Local SQLite database (all data works offline, no external API required by default).
+> * Task Management:
+>
+>   * Daily tasks displayed by date and time.
+>   * Overdue tasks are filtered so only those related to today’s task topics are shown.
+>   * Add, delete, reschedule tasks.
+>   * Manual reordering of today’s tasks (drag-and-drop or arrows) with order index stored in DB.
+> * Progress Logging:
+>
+>   * Automatically asks about today’s tasks, then related overdue tasks.
+>   * If “not completed”, mark directly as incomplete.
+>   * If “completed”, ask progress percentage (0–100%) and difficulty level (easy/medium/hard).
+> * Reports and Charts:
+>
+>   * Daily, weekly, monthly, and full reports.
+>   * Charts: Daily progress (circular chart), weekly/monthly comparison (bar charts).
+> * Calendar to pick a date and show its tasks and report.
+> * Data import from CSV (prevent duplicates if same task exists for same date).
+> * Notifications:
+>
+>   * Must send only **notifications related to today’s tasks and their related overdue tasks**.
+>   * User-configurable notification schedule (morning/evening).
+> * Data privacy: all data stays local.
+> * Backup and restore system.
+>
+> ### **UI/UX Improvements:**
+>
+> * Modern design inspired by **Notion, ClickUp, and Todoist**:
+>
+>   * Clean, minimal workflow-first layout.
+>   * Light & Dark mode switch (user-controlled).
+>   * Colors are calm and comfortable; icons are minimal (Material Icons – solid, monochrome).
+>   * Navigation should feel modern and smart (intuitive transitions, smooth animations).
+> * Workflow-first landing page (focus on today’s tasks and progress).
+> * Settings panel to manage:
+>
+>   * Notification timing.
+>   * Theme switching.
+>   * Google Calendar sync (for adding tasks as events).
+>   * Weekly/monthly email reports (based on user email).
+> * Charts and progress views should use smooth animations and an intelligent layout (daily progress → circular chart, weekly/monthly → bar charts).
+>
+> ### **New Feature – Focus Mode:**
+>
+> * Take inspiration from **Windows Clock → Focus Sessions** for implementing the Pomodoro/focus session system:
+>
+>   * Ability to set session length and automatic break times.
+>   * Integration with tasks (each task records how many focus sessions it consumed).
+>   * Persistent timer that stays active even when navigating away or minimizing.
+>   * Circular progress visualization with customizable colors.
+>   * Sessions and breaks should be automatically logged against tasks for scientific productivity tracking.
+>   * Ability to customize the focus circle color scheme (light/dark theme aware).
+>
+> ### **Integrations (placeholders acceptable for now):**
+>
+> * Google Calendar (sync tasks as events).
+> * Weekly and monthly summary via email.
+>
+> ### **Important notes:**
+>
+> * Focus on **UI/UX creativity**: we want the best possible web-based experience while preserving all functionality.
+> * **We want highly polished design details with micro-interactions, smooth animations, and delightful visual feedback** for all main interactions (hover states, drag-and-drop effects, progress logging transitions, and notification slide-ins). The experience should feel premium and responsive.
+> * All advanced settings (notifications, calendar sync, email, theme switching) should be organized separately from the daily workflow view to keep the UI clean and simple.
+> * Code must be modular, scalable, and documented for future extensions.
+> * Keep all local/offline functionality intact (Google/email integration can remain optional with API placeholders).
+> * Final result must be deployable as a web app and easily packaged as a desktop app later.
+>
+> **Deliverables:**
+>
+> * Full source code of the web-based app with modern UI/UX (HTML/CSS/JS + backend of your choice, or Python backend with a modern frontend).
+> * All old features preserved and improved, all new features implemented or stubbed for integration.
+
+

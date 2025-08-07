@@ -1,0 +1,76 @@
+I have an existing Python desktop application called Study Tracker, built with PySide6 and using a local SQLite database. The application currently works correctly (task management, progress logging, reporting, and notifications).
+I want you to upgrade the existing codebase (I will upload it as a ZIP) instead of starting from scratch. Keep all current features intact, but apply the following UI/UX improvements and new functionality placeholders:
+
+1. Modern UI/UX Redesign:
+
+Redesign the main window using a modern, minimalistic style, similar to Notion or ClickUp, with a focus on clarity and workflow.
+
+Implement Material Icons (solid style) from https://fonts.google.com/icons with both light mode and dark mode themes, switchable from inside the app.
+
+Use comfortable color schemes (soft, non-aggressive colors). Avoid too many icons on tasks; use text + minimal iconography.
+
+Replace the current charts:
+
+Daily chart → use a circular (pie-like) chart for task progress.
+
+Weekly and monthly charts → use bar charts.
+
+Tasks older than 7 days should still show a ⚠ warning symbol but in a subtle way.
+
+Keep the interface focused on daily workflow. Move secondary features (reports, settings, advanced features) to a dedicated Settings / Advanced panel accessible from the main UI (like a sidebar or a gear icon).
+
+2. Notification Improvements:
+
+Allow notification times to be customizable inside the program (e.g., morning & evening reminder times).
+
+Reduce notification spam → only show notifications about today’s tasks.
+
+3. CSV Import Logic Fix:
+
+When importing tasks from a CSV, if a task with the same date and title already exists, do not duplicate or overwrite it.
+
+4. Settings & Themes:
+
+Add a Settings page for:
+
+Light/Dark mode toggle.
+
+Notification times adjustment.
+
+Placeholder options for future integrations (Google Calendar sync & Email reports).
+
+5. Google Calendar & Email Integration (Placeholders Only):
+
+Prepare an empty module and UI options for:
+
+Syncing tasks to Google Calendar.
+
+Sending weekly and monthly email reports (based on user-provided email).
+
+These should be placeholders only for now (no actual API integration yet).
+
+6. Startup & Icon:
+
+Make the program buildable into an executable that can be launched from a shortcut (no need to run python main.py).
+
+Add a proper app icon in the taskbar instead of the Python default icon.
+
+Important Notes:
+
+Do not break any of the existing core functionalities:
+
+Task management
+
+Progress logging
+
+Reports and charts
+
+Notifications
+
+Keep the project structure as it is (app/core, app/gui, app/features, etc.) and integrate the changes cleanly.
+
+Output the updated code as a ZIP file ready to run locally with pip install -r requirements.txt.
+
+Use Python 3.10+ and PySide6 best practices.
+
+Goal: Deliver a polished version of the app with a modern UI, theme switching, improved notification logic, and ready placeholders for Google Calendar & Email integration while keeping existing features intact.

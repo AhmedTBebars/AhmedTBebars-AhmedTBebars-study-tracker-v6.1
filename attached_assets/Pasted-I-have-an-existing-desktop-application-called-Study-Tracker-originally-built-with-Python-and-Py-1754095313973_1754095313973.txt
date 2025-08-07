@@ -1,0 +1,89 @@
+I have an existing desktop application called **Study Tracker**, originally built with Python and PySide6, which I started converting into a modern web-based application. 
+The previous attempt stopped due to credits limitations, so I need you to review the current implementation and complete it according to the full original specifications plus recent updates.
+
+---
+
+### **Core Goal**
+Rebuild and complete **Study Tracker** as a **premium modern web application** with:
+- Focus session system (Pomodoro-like, linked to tasks)
+- Notion-inspired premium UI/UX
+- Advanced productivity analytics and data portability
+- Local-first data privacy (offline support)
+
+---
+
+### **Required Features (Original + New Updates)**
+
+#### **1. Advanced Task Management**
+- Elegant daily task cards with smooth animations and contextual hover states.
+- Intelligent overdue task filtering (only today-related topics).
+- Smooth drag-and-drop reordering with ghost elements and visual feedback.
+- Quick-add functionality with floating action buttons and keyboard shortcuts.
+- Task-focus session integration: log how many focus sessions each task consumes.
+- Ability to edit, reschedule, and mark tasks as complete/incomplete with difficulty level.
+
+#### **2. Focus Mode System (Pomodoro-Inspired)**
+- Customizable session lengths with automatic break scheduling.
+- Persistent circular timer with smooth progress animations.
+- Session tracking per task for scientific productivity analysis.
+- Customizable focus circle color schemes (theme-aware).
+- Background timer persistence across navigation and minimized states.
+- Focus session logging integrated directly with task progress tracking.
+
+#### **3. Progress Logging**
+- Interactive progress input with animated sliders and celebration effects.
+- Smart difficulty selection with iconographic representation.
+- Focus session count tracking per completed task.
+- Smooth progress visualization with real-time chart updates.
+- Full detail entry required for new tasks (completion % + difficulty).
+
+#### **4. Advanced Analytics Dashboard**
+- Interactive circular daily progress charts with hover details and smooth transitions.
+- Animated weekly/monthly bar charts with comparative analytics.
+- Focus session productivity insights and patterns analysis.
+- Calendar heatmap for long-term productivity visualization.
+
+#### **5. Comprehensive Data Import/Export System**
+- **Import** tasks from CSV with duplicate prevention (Date + Title matching).
+- Imported completed tasks auto-marked as 100% complete with default medium difficulty.
+- Default time configuration for imported tasks with no time value.
+- **Export** daily/weekly/monthly reports with custom date ranges.
+- Export formats: CSV (priority) and Excel.
+- Export includes: tasks, completion %, difficulty, focus sessions count, and status.
+- Full data portability for external analysis (Excel, Google Sheets, Power BI).
+
+#### **6. Smart Notification System**
+- In-app notifications with smooth slide-in animations.
+- Focus session reminders and break notifications.
+- Customizable notification schedule (morning and evening).
+- Smart filtering for today's tasks and related overdue items only.
+
+#### **7. UI/UX & Theming**
+- Modern, premium design inspired by Notion/ClickUp/Todoist.
+- Light & dark mode toggle with persistent user preference.
+- Customizable focus circle colors in focus mode.
+- Clean, workflow-first landing page (today’s tasks, progress).
+- Settings panel for notifications, theme switching, Google Calendar sync placeholder, and email reports placeholder.
+
+#### **8. Data Privacy & Offline Support**
+- Offline-first operation with local SQLite database.
+- Option for future packaging as a local desktop app using Electron.
+
+---
+
+### **Development Notes**
+- Use React + TypeScript frontend and Express.js backend (or similar modern stack).
+- Use Tailwind CSS + Framer Motion for animations.
+- Use Shadcn/ui components for consistent modern look.
+- Use Zustand/React Query for state and data management.
+- Ensure code is modular, scalable, and well-documented.
+
+---
+
+### **Next Steps**
+Please:
+1. **Review the current codebase** already uploaded (previous partial implementation).
+2. **Identify what features are missing or broken** compared to the above specification.
+3. **Complete and fix everything** so that all features work as described and deliver the premium Notion-inspired experience.
+
+Focus on delivering a **fully working application** with a polished user interface, smooth workflow, and all core functionalities implemented.
